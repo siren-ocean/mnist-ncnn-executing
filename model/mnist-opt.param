@@ -1,0 +1,9 @@
+7767517
+7 7
+Input                    input_0                  0 1 input_0
+Convolution              Conv_0                   1 1 input_0 8 0=32 1=5 4=2 5=1 6=800 9=1
+Pooling                  MaxPool_2                1 1 8 9 1=2 2=2 5=1
+Convolution              Conv_3                   1 1 9 11 0=64 1=5 4=2 5=1 6=51200 9=1
+Pooling                  MaxPool_5                1 1 11 12 1=2 2=2 5=1
+Reshape                  Reshape_6                1 1 12 18 0=-1
+InnerProduct             Gemm_7                   1 1 18 output_0 0=10 1=1 2=31360
